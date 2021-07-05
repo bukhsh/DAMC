@@ -72,7 +72,7 @@ class printoutput(object):
             for t in self.instance.T:
                 zone.loc[ind] = pd.Series({'Zone':z, 'Time':t,\
                                             'Generation (MW)':round(sum(self.instance.pG[g,t].value for g in self.instance.BRPG if (g,z) in self.instance.BRPGZone),2),\
-                                            'Demand (MW)':round(sum(self.instance.pD[g,t].value for g in self.instance.BRPD if (g,z) in self.instance.BRPDZone),2), 'LMP':1})
+                                            'Demand (MW)':round(sum(self.instance.pD[g,t].value for g in self.instance.BRPD if (g,z) in self.instance.BRPDZone),2), 'LMP':'X'})
                 ind += 1
 
         # trades

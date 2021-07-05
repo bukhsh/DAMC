@@ -1,5 +1,9 @@
 import oats
-from oats.run import fbmc
+from oats.run import atc, fbmc
 
-CaseStudy = '/home/waqquas/FBMC/case studies/example10.xlsx'
-fbmc(neos=False, solver='cplex', tc=CaseStudy)
+CaseStudy_atc  = '/home/waqquas/DAMC/case studies/example_atc.xlsx'
+CaseStudy_fmbc = '/home/waqquas/DAMC/case studies/example_fmbc.xlsx'
+
+
+# atc(neos=False, solver='cplex', tc=CaseStudy_atc)
+fbmc(neos=False, solver='cplex', tc=CaseStudy_fmbc)
