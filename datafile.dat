@@ -1,6 +1,6 @@
 #This is Python generated data file for a Pyomo model.py
 #_author_:W. Bukhsh
-#Time stamp: 2021-07-05 10:03:05.546796
+#Time stamp: 2021-07-05 18:34:33.847915
 set Z:=
 FR
 BE
@@ -43,18 +43,18 @@ BRP-G-DE 1 500.0
 ;
 param VolD:=
 BRP-D-FR 1 -50.0
-BRP-D-BE 1 -100.0
+BRP-D-BE 1 -150.0
 BRP-D-DE 1 -200.0
 ;
 param cG:=
 BRP-G-FR 1 2.0
 BRP-G-BE 1 40.0
-BRP-G-DE 1 45.0
+BRP-G-DE 1 10.0
 ;
 param cD:=
-BRP-D-FR 1 -1.0
-BRP-D-BE 1 -2.0
-BRP-D-DE 1 30.0
+BRP-D-FR 1 -5.0
+BRP-D-BE 1 -5.0
+BRP-D-DE 1 -5.0
 ;
 param A:=
 FR-BE 1 FR
@@ -63,16 +63,16 @@ FR-DE 1 FR
 FR-DE 2 DE
 ;
 param Cap:=
-FR-BE 1 100.0
-FR-DE 1 100.0
+FR-BE 1 200.0
+FR-DE 1 200.0
 ;
 param Import:=
-FR 1 500
-BE 1 150
-DE 1 250
+FR 1 200
+BE 1 200
+DE 1 100
 ;
 param Export:=
-FR 1 250
-BE 1 350
-DE 1 200
+FR 1 200
+BE 1 200
+DE 1 250
 ;
