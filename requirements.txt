@@ -1,0 +1,15 @@
+attrs==20.3.0
+chardet==4.0.0
+connexion==2.7.0
+numpy==1.20.2
+pandas==1.2.4
+ply==3.11
+Pyomo==5.7.3
+pyrsistent==0.17.3
+python-dateutil==2.8.1
+pytz==2021.1
+PyUtilib==6.0.0
+PyYAML==5.4.1
+requests==2.25.1
+tabulate==0.8.9
+urllib3==1.26.4

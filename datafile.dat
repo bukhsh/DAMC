@@ -1,0 +1,78 @@
+#This is Python generated data file for a Pyomo model.py
+#_author_:W. Bukhsh
+#Time stamp: 2021-07-05 10:03:05.546796
+set Z:=
+FR
+BE
+DE
+;
+set BRPG:=
+BRP-G-FR
+BRP-G-BE
+BRP-G-DE
+;
+set BRPD:=
+BRP-D-FR
+BRP-D-BE
+BRP-D-DE
+;
+set LE:=
+ 1 
+ 2;
+set L:=
+FR-BE
+FR-DE
+;
+set T:=
+1
+;
+set BRPGZone:=
+BRP-G-FR FR
+BRP-G-BE BE
+BRP-G-DE DE
+;
+set BRPDZone:=
+BRP-D-FR FR
+BRP-D-BE BE
+BRP-D-DE DE
+;
+param VolG:=
+BRP-G-FR 1 500.0
+BRP-G-BE 1 200.0
+BRP-G-DE 1 500.0
+;
+param VolD:=
+BRP-D-FR 1 -50.0
+BRP-D-BE 1 -100.0
+BRP-D-DE 1 -200.0
+;
+param cG:=
+BRP-G-FR 1 2.0
+BRP-G-BE 1 40.0
+BRP-G-DE 1 45.0
+;
+param cD:=
+BRP-D-FR 1 -1.0
+BRP-D-BE 1 -2.0
+BRP-D-DE 1 30.0
+;
+param A:=
+FR-BE 1 FR
+FR-BE 2 BE
+FR-DE 1 FR
+FR-DE 2 DE
+;
+param Cap:=
+FR-BE 1 100.0
+FR-DE 1 100.0
+;
+param Import:=
+FR 1 500
+BE 1 150
+DE 1 250
+;
+param Export:=
+FR 1 250
+BE 1 350
+DE 1 200
+;
