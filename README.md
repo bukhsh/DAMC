@@ -32,3 +32,7 @@ python runtest.py
 ```
 
 Within the above script, specify the case-study (see an example of data format within the folder 'case studies'), and one of the method of day-ahead market clearing: atc or fmbc.
+
+## Output
+
+Output of market clearing is saved in 'results.xlsx' file
